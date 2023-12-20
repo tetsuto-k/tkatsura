@@ -8,17 +8,21 @@
 </head>
 <body>
 
-<!-- Image that triggers the popup -->
-<img src="gallery-example-1.jpg" alt="Clickable Image" onclick="showPopup()">
+    <div class="image-container">
+        <img src="your_image_url.jpg" alt="Clickable Image" class="hover-image" onclick="showPopup()">
+    </div>
 
-<!-- Popup content -->
-<div id="myPopup" class="popup">
-    <p>This is your popup content.</p>
-    <button onclick="hidePopup()">Close</button>
-</div>
+    <!-- Image that triggers the popup -->
+    <img src="gallery-example-1.jpg" alt="Clickable Image" onclick="showPopup()">
 
-<!-- Link to the external JavaScript file -->
-<script src="script.js"></script>
+    <!-- Popup content -->
+    <div id="myPopup" class="popup">
+        <p>This is your popup content.</p>
+        <button onclick="hidePopup()">Close</button>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
 
 </body>
 </html>
