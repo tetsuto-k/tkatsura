@@ -1,11 +1,22 @@
 // script.js
 
-// Function to show the popup
 function showPopup() {
-    document.getElementById("myPopup").style.opacity = 1;
+    // Get the popup container
+    const popupContainer = document.getElementById("popupContainer");
+
+    // Load content from the external HTML file
+    fetch("popup_content.html")
+        .then(response => response.text())
+        .then(content => {
+            // Set the content inside the popup container
+            popupContainer.innerHTML = content;
+
+            // Show the popup
+            popupContainer.classList.add("active");
+        });
 }
 
-// Function to hide the popup
 function hidePopup() {
-    document.getElementById("myPopup").style.opacity = 0;
+    // Hide the popup
+    document.getElementById("popupContainer").classList.remove("active");
 }
