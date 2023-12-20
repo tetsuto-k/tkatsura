@@ -2,7 +2,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Popup Example</title>
+    <style>
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -10,5 +35,34 @@
     <p>This respository is made to get myself familiar with the GitHub pages.</p>
     <p>It also acts as a storage for some of the past code I made that are not directly related to each other.</p>
     <a href="/tkatsura/contact.html">My contacts</a>
+    <button onclick="togglePopup()">Open Popup</button>
+
+    <div id="popup" class="popup">
+        <p>This is a popup!</p>
+        <button onclick="togglePopup()">Close</button>
+    </div>
+
+    <div id="overlay" class="overlay" onclick="togglePopup()"></div>
+
+    <script>
+        function togglePopup() {
+            var popup = document.getElementById('popup');
+            var overlay = document.getElementById('overlay');
+            popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
+            overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
 </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+
+
+
+</body>
+</html>
+
 </html>
