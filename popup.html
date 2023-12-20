@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Popup</title>
+    <style>
+        /* Style for the popup */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Image that triggers the popup -->
+<img src="gallery-example-1.jpg" alt="Clickable Image" onclick="showPopup()">
+
+<!-- Popup content -->
+<div id="myPopup" class="popup">
+    <p>This is your popup content.</p>
+    <button onclick="hidePopup()">Close</button>
+</div>
+
+<script>
+    // Function to show the popup
+    function showPopup() {
+        document.getElementById("myPopup").style.display = "block";
+    }
+
+    // Function to hide the popup
+    function hidePopup() {
+        document.getElementById("myPopup").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
