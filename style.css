@@ -14,6 +14,11 @@ body {
     transition: filter 0.3s ease;
 }
 
+/* Hover effect */
+.hover-image:hover {
+    filter: brightness(70%);
+}
+
 /* Style for the popup */
 .popup {
     display: none;
@@ -26,9 +31,4 @@ body {
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 1;
-}
-
-/* Hover effect */
-.hover-image:hover {
-    filter: brightness(70%);
 }
