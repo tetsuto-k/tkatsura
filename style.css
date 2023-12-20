@@ -23,7 +23,7 @@ body {
     opacity: 0;
     width: 300px; /* Adjust the width as needed */
     height: auto;
-    transition: opacity 0.5s ease; /* Adjust the transition duration and timing function as needed */
+    transition: opacity 30s ease; /* Adjust the transition duration and timing function as needed */
 }
 
 /* Hover effect */
