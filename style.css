@@ -23,6 +23,7 @@ body {
     display: none;
     width: 300px; /* Adjust the width as needed */
     height: auto;
+    transition: opacity 0.5s ease;
 }
 
 /* Hover effect */
