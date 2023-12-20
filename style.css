@@ -28,7 +28,7 @@ body {
 
 /* Hover effect */
 .image-container:hover .hover-image {
-    display: block;
+    opacity: 1;
 }
 
 /* Style for the popup */
