@@ -3,20 +3,31 @@ body {
     text-align: center;
 }
 
-/* Style for the image container */
+/* Style for the container */
 .image-container {
     position: relative;
     display: inline-block;
 }
 
-/* Style for the image */
+/* Style for the main image */
+.main-image {
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
+}
+
+/* Style for the hover image */
 .hover-image {
-    transition: filter 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
 }
 
 /* Hover effect */
-.hover-image:hover {
-    filter: brightness(70%);
+.image-container:hover .hover-image {
+    display: block;
 }
 
 /* Style for the popup */
