@@ -20,10 +20,10 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    display: none;
+    opacity: 0;
     width: 300px; /* Adjust the width as needed */
     height: auto;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease; /* Adjust the transition duration and timing function as needed */
 }
 
 /* Hover effect */
