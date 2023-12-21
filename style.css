@@ -9,9 +9,18 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background: rgba(0, 0, 0); /* Semi-transparent black overlay */
     z-index: 2; /* Place the overlay above the background and below the popup */
-    display: none; /* Initially hidden */
+    visibility: hidden;
+}
+
+.overlay.active {
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+    z-index: 2;
+    visibility: visible;
 }
 
 /* Style for the container */
@@ -50,7 +59,7 @@ body {
     left: 50%;
     height: 90vh;
     transform: translateX(-50%) translateY(30px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: opacity 0.75s ease, transform 0.75s ease;
     padding: 20px;
     background: #fff;
     border: 1px solid #ccc;
@@ -63,7 +72,7 @@ body {
 .popup.active {
     height: 90vh;
     transform: translateX(-50%) translateY(30px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: opacity 0.75s ease, transform 0.75s ease;
     opacity: 1;
     z-index: 3;
     overflow: auto;

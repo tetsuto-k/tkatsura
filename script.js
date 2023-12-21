@@ -3,7 +3,7 @@
 function showPopup(htmlFileName) {
     // Get the popup container
     const popupContainer = document.getElementById("popupContainer");
-    var overlayElement = document.querySelector('.overlay');
+    const overlayBackground = document.getElementById("overlayBackground");
 
     // Load content from the external HTML file
     fetch(htmlFileName)
@@ -15,14 +15,13 @@ function showPopup(htmlFileName) {
             // Show the popup
             popupContainer.classList.add("active");
         
-            // Block everyything in the main website
-            overlayElement.style.display = 'block';
+            // Block everything in the main website
+            overlayElement.classList.add("active");
         });
 }
 
 function hidePopup() {
     // Hide the popup
     document.getElementById("popupContainer").classList.remove("active");
-    var overlayElement = document.querySelector('.overlay');
-    overlayElement.style.display = 'none';
+    document.getElementById("overlayBackground").classList.remove("active");
 }
