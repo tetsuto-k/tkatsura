@@ -1,11 +1,11 @@
 // script.js
 
-function showPopup() {
+function showPopup(htmlFileName) {
     // Get the popup container
     const popupContainer = document.getElementById("popupContainer");
 
     // Load content from the external HTML file
-    fetch("popup_content.html")
+    fetch(htmlFileName)
         .then(response => response.text())
         .then(content => {
             // Set the content inside the popup container
