@@ -13,8 +13,11 @@ function showPopup(htmlFileName) {
             popupContainer.innerHTML = content;
 
             // Show the popup
-            popupContainer.classList.add("active");
-        
+            popupContainer.style.visibility = "visible";
+            setTimeout(function () {
+                popupContainer.classList.add("active");
+              }, 100);
+
             // Block everything in the main website
             overlayBackground.classList.add("active");
         });
@@ -24,4 +27,9 @@ function hidePopup() {
     // Hide the popup
     document.getElementById("popupContainer").classList.remove("active");
     document.getElementById("overlayBackground").classList.remove("active");
+    
+    setTimeout(function () {
+        document.getElementById("popupContainer").style.visibility = "hidden";
+        document.getElementById("overlayBackground").style.visibility = "hidden";
+      }, 100);
 }
