@@ -55,7 +55,7 @@ body {
 .popup {
     opacity: 0;
     position: fixed;
-    top: 0;
+    top: -5vh;
     left: 50%;
     height: 90vh;
     transform: translateX(-50%) translateY(5vh);
@@ -74,7 +74,6 @@ body {
     height: 90vh;
     transform: translateX(-50%) translateY(5vh);
     transition: opacity 0.5s ease, transform 0.5s ease;
-    transition-delay: 0.25s;
     opacity: 1;
     z-index: 3;
     overflow: auto;

@@ -31,5 +31,5 @@ function hidePopup() {
     setTimeout(function () {
         document.getElementById("popupContainer").style.visibility = "hidden";
         document.getElementById("overlayBackground").style.visibility = "hidden";
-      }, 100);
+      }, 900);
 }
