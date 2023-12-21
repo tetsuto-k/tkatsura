@@ -16,7 +16,7 @@ function showPopup(htmlFileName) {
             popupContainer.classList.add("active");
         
             // Block everything in the main website
-            overlayElement.classList.add("active");
+            overlayBackground.classList.add("active");
         });
 }
 
