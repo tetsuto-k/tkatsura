@@ -33,7 +33,7 @@ body {
 
 /* Style for the popup */
 .popup {
-    height: 80%;
+    height: 300px;
     opacity: 0;
     transition: opacity 0.5s ease, transform 0.5s ease;
     position: fixed;
