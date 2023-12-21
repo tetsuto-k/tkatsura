@@ -59,7 +59,8 @@ body {
     left: 50%;
     height: 90vh;
     transform: translateX(-50%) translateY(30px);
-    transition: opacity 0.75s ease, transform 0.75s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition-delay: 0.25s;
     padding: 20px;
     background: #fff;
     border: 1px solid #ccc;
@@ -72,7 +73,8 @@ body {
 .popup.active {
     height: 90vh;
     transform: translateX(-50%) translateY(30px);
-    transition: opacity 0.75s ease, transform 0.75s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition-delay: 0.25s;
     opacity: 1;
     z-index: 3;
     overflow: auto;
