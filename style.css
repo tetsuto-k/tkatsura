@@ -57,6 +57,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 3;
     overflow: auto;
+    visibility: hidden;
 }
 
 .popup.active {
@@ -65,4 +66,5 @@ body {
     opacity: 1;
     z-index: 3;
     overflow: auto;
+    visibility: visible;
 }
