@@ -3,6 +3,7 @@
 function showPopup(htmlFileName) {
     // Get the popup container
     const popupContainer = document.getElementById("popupContainer");
+    var overlay = document.querySelector('.overlay');
 
     // Load content from the external HTML file
     fetch(htmlFileName)
@@ -13,6 +14,8 @@ function showPopup(htmlFileName) {
 
             // Show the popup
             popupContainer.classList.add("active");
+            overlay.style.display = (overlay.style.display === 'none') ? 'block' : 'none';
+        
         });
 }
 

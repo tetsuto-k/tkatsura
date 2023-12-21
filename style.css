@@ -3,6 +3,17 @@ body {
     text-align: center;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 2; /* Place the overlay above the background and below the popup */
+    display: none; /* Initially hidden */
+}
+
 /* Style for the container */
 .image-container {
     position: relative;
@@ -44,7 +55,7 @@ body {
     background: #fff;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    z-index: 3;
 }
 
 .popup.active {
