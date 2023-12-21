@@ -33,7 +33,6 @@ body {
 
 /* Style for the popup */
 .popup {
-    height: 300px;
     opacity: 0;
     transition: opacity 0.5s ease, transform 0.5s ease;
     position: fixed;
@@ -48,6 +47,8 @@ body {
 }
 
 .popup.active {
+    height: 300px;
+    width: 300px;
     transform: translateX(-50%) translateY(30px);
     opacity: 1;
     overflow: auto;
