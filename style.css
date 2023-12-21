@@ -44,10 +44,10 @@ body {
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 1;
-    overflow: auto;
 }
 
 .popup.active {
     transform: translateX(-50%) translateY(30px);
     opacity: 1;
+    overflow: auto;
 }
