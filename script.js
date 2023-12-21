@@ -17,7 +17,6 @@ function showPopup(htmlFileName) {
 
             // Show the popup
             popupContainer.classList.add("active");
-            overlayElement.style.display = 'block';
         
         });
 }
@@ -26,5 +25,5 @@ function hidePopup() {
     // Hide the popup
     document.getElementById("popupContainer").classList.remove("active");
     var overlayElement = document.querySelector('.overlay');
-    overlayElement.style.display = 'block';
+    overlayElement.style.display = 'none';
 }
