@@ -16,7 +16,7 @@ function showPopup(htmlFileName) {
             popupContainer.classList.add("active");
         
             // Block everyything in the main website
-            overlayCover.style.display = 'block';
+            overlayElement.style.display = 'block';
         });
 }
 
