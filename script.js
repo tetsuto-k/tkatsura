@@ -9,15 +9,14 @@ function showPopup(htmlFileName) {
     fetch(htmlFileName)
         .then(response => response.text())
         .then(content => {
-            // Block everyything in the main website
-            overlayCover.style.display = 'block';
-
             // Set the content inside the popup container
             popupContainer.innerHTML = content;
 
             // Show the popup
             popupContainer.classList.add("active");
         
+            // Block everyything in the main website
+            overlayCover.style.display = 'block';
         });
 }
 
