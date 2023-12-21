@@ -22,4 +22,5 @@ function showPopup(htmlFileName) {
 function hidePopup() {
     // Hide the popup
     document.getElementById("popupContainer").classList.remove("active");
+    overlay.style.display = 'none';
 }
