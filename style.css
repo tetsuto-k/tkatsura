@@ -48,6 +48,6 @@ body {
 }
 
 .popup.active {
-    transform: translateX(-50%) translateY(0.2%);
+    transform: translateX(-50%) translateY(30px);
     opacity: 1;
 }
