@@ -21,7 +21,7 @@ function showPopup(htmlFileName) {
             // Block everything in the main website
             overlayBackground.style.visibility = "visible";
             setTimeout(function () {
-                popupContainer.classList.add("active");
+                overlayBackground.classList.add("active");
               }, 100);
         });
 }
