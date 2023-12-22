@@ -19,7 +19,10 @@ function showPopup(htmlFileName) {
               }, 100);
 
             // Block everything in the main website
-            overlayBackground.classList.add("active");
+            overlayBackground.style.visibility = "visible";
+            setTimeout(function () {
+                popupContainer.classList.add("active");
+              }, 100);
         });
 }
 
