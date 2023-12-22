@@ -20,7 +20,6 @@ body {
     opacity: 0.5;
     transition: opacity 0.5s ease;
     z-index: 2;
-    visibility: visible;
 }
 
 /* Style for the container */
