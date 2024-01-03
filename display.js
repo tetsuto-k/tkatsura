@@ -5,6 +5,6 @@ fetch('popup.html')
         const popupDoc = parser.parseFromString(content, 'text/html');
         const moveToIndex = popupDoc.getElementById('moveToIndex').innerHTML;
 
-        document.getElementById('displayText').innerText = moveToIndex;
+        document.getElementById('displayText').innerHTML = moveToIndex;
     })
     .catch(error => console.error('Error fetching content:', error));
