@@ -80,3 +80,7 @@ body {
 .hidden {
     display: none;
 }
+
+.allcaps {
+    text-transform: uppercase;
+}
