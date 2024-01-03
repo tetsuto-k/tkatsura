@@ -56,7 +56,7 @@ body {
     position: fixed;
     top: 0;
     left: 50%;
-    height: 90vh;
+    height: 87vh;
     transform: translateX(-50%) translateY(30px);
     transition: opacity 0.5s ease, transform 0.5s ease;
     padding: 20px;
@@ -69,10 +69,14 @@ body {
 }
 
 .popup.active {
-    height: 90vh;
+    height: 87vh;
     transform: translateX(-50%) translateY(30px);
     transition: opacity 0.5s ease, transform 0.5s ease;
     opacity: 1;
     z-index: 3;
     overflow: auto;
+}
+
+.hidden {
+    display: none;
 }
